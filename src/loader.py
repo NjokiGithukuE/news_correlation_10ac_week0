@@ -7,6 +7,7 @@ import copy
 from datetime import datetime
 from pick import pick
 from time import sleep
+import pandas as pd
 
 
 
@@ -82,3 +83,16 @@ if __name__ == "__main__":
     
     parser.add_argument('--zip', help="Name of a zip file to import")
     args = parser.parse_args()
+
+
+
+
+#Task 1 - functions to load datasets
+def news_rating_loader(path):
+    return pd.read_csv(path)
+
+def domains_loader(path):
+    return pd.read_csv(path)
+
+def traffic_loader(path):
+    return pd.read_csv(path)
