@@ -96,3 +96,9 @@ def domains_loader(path):
 
 def traffic_loader(path):
     return pd.read_csv(path)
+
+
+# Function to get sentiment scores for a specific row
+
+    text = ser.iloc[pos]['text']
+    return text
